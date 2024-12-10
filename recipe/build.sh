@@ -30,3 +30,5 @@ EOF
 
 # Download dependency licenses wtih dotnet-project-licenses
 dotnet-project-licenses --input src/SonarScanner.MSBuild/SonarScanner.MSBuild.csproj -t -d license-files
+
+rm ${PREFIX}/bin/dotnet
