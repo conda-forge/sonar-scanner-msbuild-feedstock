@@ -4,7 +4,7 @@
 
 [project]
 name = "sonar-scanner-msbuild-feedstock"
-version = "3.44.9"
+version = "3.45.4"
 description = "Pixi configuration for conda-forge/sonar-scanner-msbuild-feedstock"
 authors = ["@conda-forge/sonar-scanner-msbuild"]
 channels = ["conda-forge"]
