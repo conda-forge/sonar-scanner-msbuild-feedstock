@@ -29,6 +29,10 @@ call %DOTNET_ROOT%\dotnet exec %CONDA_PREFIX%\libexec\sonar-scanner-msbuild\Sona
 EOF
 
 # Download dependency licenses wtih dotnet-project-licenses
-dotnet-project-licenses --input src/SonarScanner.MSBuild/SonarScanner.MSBuild.csproj -t -d license-files
+tee ignored_packages.json << EOF
+["SonarAnalyzer.CSharp.Styling"]
+EOF
+
+dotnet-project-licenses --input src/SonarScanner.MSBuild/SonarScanner.MSBuild.csproj -t -d license-files -ignore ignored_packages.json
 
 rm ${PREFIX}/bin/dotnet
