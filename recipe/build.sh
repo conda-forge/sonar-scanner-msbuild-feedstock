@@ -30,7 +30,7 @@ EOF
 
 # Download dependency licenses wtih dotnet-project-licenses
 tee ignored_packages.json << EOF
-["SonarAnalyzer.CSharp.Styling"]
+["SonarAnalyzer.CSharp.Styling", "Microsoft.CodeCoverage.IO"]
 EOF
 
 dotnet-project-licenses --input src/SonarScanner.MSBuild/SonarScanner.MSBuild.csproj -t -d license-files -ignore ignored_packages.json

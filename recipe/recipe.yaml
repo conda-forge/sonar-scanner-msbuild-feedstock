@@ -23,7 +23,7 @@ requirements:
 
 tests:
   - script:
-      - "sonar-scanner-msbuild 2>&1 | grep -q \"SonarScanner for MSBuild\""
+      - "sonar-scanner-msbuild 2>&1 | grep -q \"SonarScanner for .NET\""
 
 about:
   license: GPL-3.0-or-later
