@@ -1,5 +1,5 @@
 context:
-  version: "12.0.0.12728"
+  version: "12.1.0.12898"
 
 package:
   name: sonar-scanner-msbuild
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/SonarSource/sonar-scanner-msbuild/archive/${{ version }}.tar.gz
-  sha256: e6cb20f00748e69602d99e01815f8ca1e8a716298b8df01bb9b451ec3985fa36
+  sha256: f2abaedf39afebea58f59e5f1ea1e7dfb7893ff99695094c30622f253f3589e7
 
 build:
   number: 0
